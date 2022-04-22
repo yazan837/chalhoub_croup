@@ -7,8 +7,6 @@ const initState = false;
 
 const products = (state = [], action) => {
   switch (action.type) {
-    case FETCH_PRODUCTS:
-      return action.data;
     case COMPLETE_FETCH_PRODUCTS:
       return action.data;
 
@@ -16,7 +14,21 @@ const products = (state = [], action) => {
       return state;
   }
 };
+const isFethingProducts = (state = initState, action) => {
+  switch (action.type) {
+    case FETCH_PRODUCTS: {
+      return true;
+    }
+    case COMPLETE_FETCH_PRODUCTS: {
+      return false;
+    }
+    default: {
+      return state;
+    }
+  }
+};
 
 export default combineReducers({
   products,
+  isFethingProducts,
 });

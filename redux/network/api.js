@@ -7,14 +7,11 @@ const request = async (method, endpoint) => {
 
   return fetch(url, {
     method,
-    headers: {
-      'Content-Type': 'application/json',
-    },
   })
     .then(res => res.json())
     .then(res => {
       return {
-        networkSuccess: 200,
+        networkSuccess: true,
         data: res,
       };
     })

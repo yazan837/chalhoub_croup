@@ -25,7 +25,7 @@ const renderItem = ({item}) => {
 
 const ProductsList = ({data}) => {
   return (
-    <View style={{}}>
+    <View>
       <FlatList
         data={data}
         horizontal={false}

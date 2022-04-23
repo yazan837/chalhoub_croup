@@ -7,7 +7,7 @@ import reducers from '../redux/reducers';
 const store = createStore(reducers);
 
 import Profile from '../src/profile';
-
+jest.useFakeTimers();
 const tree = create(
   <Provider store={store}>
     <Profile />

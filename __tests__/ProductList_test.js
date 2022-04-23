@@ -6,16 +6,17 @@ import reducers from '../redux/reducers';
 
 const store = createStore(reducers);
 
-import Home from '../src/home';
+import ProductsList from '../src/components/ProductsList';
 
 jest.useFakeTimers();
+const navigation = {
+  navigate: jest.fn(),
+};
+jest.mock('@react-navigation/native');
+jest.mock('@react-navigation/stack');
 
-const tree = create(
-  <Provider store={store}>
-    <Home />
-  </Provider>,
-);
+const tree = create(<ProductsList navigation={navigation} />);
 
-test('test home page ui', () => {
+test('test ProductsList page ui', () => {
   expect(tree).toMatchSnapshot();
 });

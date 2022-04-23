@@ -1,5 +1,4 @@
 import {createNavigationContainerRef} from '@react-navigation/native';
-import reactotron from 'reactotron-react-native';
 
 export const navigationRef = createNavigationContainerRef();
 

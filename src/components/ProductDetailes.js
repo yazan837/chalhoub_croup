@@ -78,7 +78,7 @@ const ProductDetailes = item => {
         <View style={styles.TitleContainer}>
           <Text
             style={{fontSize: 20, color: 'grey', fontWeight: 'bold'}}
-            onPress={() => navigate('HomePage')}>
+            onPress={() => navigate('Home')}>
             SEE MORE PRODUCTS
           </Text>
           <FlatList

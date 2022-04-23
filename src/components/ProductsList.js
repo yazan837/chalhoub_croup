@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, FlatList, Image, TouchableOpacity} from 'react-native';
-import reactotron from 'reactotron-react-native';
 import {navigate} from '../../navigation/NavigationService';
 
 const renderItem = ({item}) => {

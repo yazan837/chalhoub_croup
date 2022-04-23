@@ -1,7 +1,6 @@
 import {put, takeLatest, call} from 'redux-saga/effects';
 import {getProducts} from '../../network/General';
 import actions from '../../actions';
-import reactotron from 'reactotron-react-native';
 
 const {completeFetchProducts, FETCH_PRODUCTS} = actions;
 

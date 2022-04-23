@@ -10,8 +10,8 @@ const Stack = createStackNavigator();
 export default function MyStack() {
   return (
     <NavigationContainer ref={navigationRef}>
-      <Stack.Navigator initialRouteName="Profile">
-        <Stack.Screen name="HomePage" component={Home} />
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Profile" component={profile} />
         <Stack.Screen name="ProductDetailes" component={ProductDetailes} />
       </Stack.Navigator>

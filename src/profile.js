@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import {View, StyleSheet, ActivityIndicator} from 'react-native';
 
 import {useDispatch, useSelector} from 'react-redux';
-import reactotron from 'reactotron-react-native';
 import actions from '../redux/actions';
 
 import ProfileDetailes from './components/ProfileDetailes';

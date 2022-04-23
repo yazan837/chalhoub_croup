@@ -1,7 +1,5 @@
 import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import reactotron from 'reactotron-react-native';
-import {navigate} from '../../navigation/NavigationService';
+import {View, Text, Image} from 'react-native';
 
 const ProfileDetailes = ({data}) => {
   return (

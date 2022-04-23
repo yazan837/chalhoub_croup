@@ -1,5 +1,3 @@
-import reactotron from 'reactotron-react-native';
-
 export const URL = 'https://fakestoreapi.com/products';
 export const PROFILE_URL = 'https://rickandmortyapi.com/api/character/1';
 

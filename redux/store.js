@@ -3,13 +3,11 @@ import createSagaMiddleware from 'redux-saga';
 import reducers from './reducers';
 import sagas from './sagas';
 
-import Reactotron from './Reactotron';
-
 const sagaMiddleware = createSagaMiddleware();
 export default createStore(
   reducers,
   {},
-  compose(applyMiddleware(sagaMiddleware), Reactotron.createEnhancer()),
+  compose(applyMiddleware(sagaMiddleware)),
 );
 sagaMiddleware.run(sagas);
 

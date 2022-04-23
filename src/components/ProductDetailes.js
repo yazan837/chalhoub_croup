@@ -13,7 +13,7 @@ import {useSelector} from 'react-redux';
 import {navigate} from '../../navigation/NavigationService';
 
 const ProductDetailes = item => {
-  const data = item.route.params.item;
+  const data = item.route?.params?.item;
   const allImages = useSelector(state => state.home.products);
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -33,7 +33,7 @@ const ProductDetailes = item => {
           />
         </View>
         <View style={styles.ImageContainer}>
-          <Image source={{uri: data.image}} style={styles.productImage} />
+          <Image source={{uri: data?.image}} style={styles.productImage} />
           <TouchableOpacity style={styles.ResizeContainer}>
             <Image
               source={require('../../assets/resize.png')}
@@ -42,8 +42,8 @@ const ProductDetailes = item => {
           </TouchableOpacity>
         </View>
         <View style={styles.TitleContainer}>
-          <Text style={{fontSize: 20}}>{data.title}</Text>
-          <Text style={{fontSize: 14}}>{data.price} $</Text>
+          <Text style={{fontSize: 20}}>{data?.title}</Text>
+          <Text style={{fontSize: 14}}>{data?.price} $</Text>
         </View>
         <View style={styles.TitleContainer}>
           <Text style={{fontSize: 20, color: 'grey'}}>
@@ -72,7 +72,7 @@ const ProductDetailes = item => {
           <Text style={{fontSize: 20, color: 'grey', fontWeight: 'bold'}}>
             DESCRIPTION
           </Text>
-          <Text style={styles.descriptionText}>{data.description}</Text>
+          <Text style={styles.descriptionText}>{data?.description}</Text>
         </View>
         <View style={{width: '95%', borderWidth: 0.6, marginTop: 10}} />
         <View style={styles.TitleContainer}>

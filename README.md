@@ -17,3 +17,6 @@
 5 run the following command to run the app on ios:
 
 `yarn run ios`
+
+run the following command to run the test :
+`yarn test`

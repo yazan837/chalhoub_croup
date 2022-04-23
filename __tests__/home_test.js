@@ -1,10 +1,15 @@
 import React from 'react';
 import {create} from 'react-test-renderer';
-import {createStore} from 'redux';
+import {createStore, compose, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import reducers from '../redux/reducers';
-
-const store = createStore(reducers);
+import createSagaMiddleware from 'redux-saga';
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(
+  reducers,
+  {},
+  compose(applyMiddleware(sagaMiddleware)),
+);
 
 import Home from '../src/home';
 

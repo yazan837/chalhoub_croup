@@ -6,13 +6,13 @@ import reducers from '../redux/reducers';
 
 const store = createStore(reducers);
 
-import Home from '../src/home';
+import Profile from '../src/profile';
 
 const tree = create(
   <Provider store={store}>
-    <Home />
+    <Profile />
   </Provider>,
 );
-test('test home page ui', () => {
+test('test profile page ui', () => {
   expect(tree).toMatchSnapshot();
 });

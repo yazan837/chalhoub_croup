@@ -26,3 +26,6 @@ run the following command to run the test :
 test cases in this app :
 tests for rendering components ui and for data fetching from the server.
 tests for navigation works.
+
+you can download the app for android from the following link :
+` https://drive.google.com/file/d/1w3cnmdBlRi4rarEY4_czCjoRrzHQ-IaL/view?usp=sharing`

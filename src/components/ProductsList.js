@@ -2,10 +2,12 @@ import React from 'react';
 import {View, FlatList, Image, TouchableOpacity} from 'react-native';
 import {navigate} from '../../navigation/NavigationService';
 
-const renderItem = ({item}) => {
+const renderItem = item => {
+  let items = item?.item;
+
   return (
     <TouchableOpacity
-      onPress={() => navigate('ProductDetailes', {item: item})}
+      onPress={() => navigate('ProductDetailes', {item: items})}
       style={{
         flex: 1,
         margin: 10,
@@ -15,7 +17,7 @@ const renderItem = ({item}) => {
         borderRadius: 20,
       }}>
       <Image
-        source={{uri: item.image}}
+        source={{uri: items?.image}}
         style={{width: 100, height: 200}}
         resizeMode="center"
       />
@@ -32,6 +34,7 @@ const ProductsList = ({data}) => {
         showsHorizontalScrollIndicator={false}
         renderItem={renderItem}
         numColumns={2}
+        testID={'productsList'}
       />
     </View>
   );

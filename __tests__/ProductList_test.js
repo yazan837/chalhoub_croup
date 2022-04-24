@@ -1,5 +1,5 @@
 import React from 'react';
-import {create} from 'react-test-renderer';
+import {act, create} from 'react-test-renderer';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import reducers from '../redux/reducers';
@@ -19,4 +19,15 @@ const tree = create(<ProductsList navigation={navigation} />);
 
 test('test ProductsList page ui', () => {
   expect(tree).toMatchSnapshot();
+});
+
+test('testing navigation', () => {
+  const button = tree.root
+    .findByProps({testID: 'productsList'})
+    .props.renderItem().props;
+  button.onPress();
+  act(() => {
+    navigation.navigate('ProductDetailes');
+  });
+  expect(navigation.navigate).toBeCalledWith('ProductDetailes');
 });

@@ -1,5 +1,14 @@
 # chalhoub_croup
 
+this project is a simple implementation of the chalhoub croup test for the
+[]: # Language: javascript
+technique : # react-native
+
+it is a simple app that contain page to display the products and after choosing it's display
+its details and the user can see some information like image , price , description and other detailes
+for the product .
+profile page that display the user information like name , email , phone number , address , and some other information
+
 note : please make sure you have installed the lastest version of android studio on your device.
 
 1 clone the project by running the following command:

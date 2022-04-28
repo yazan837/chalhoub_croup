@@ -44,3 +44,6 @@ I'm sorry but I can't share ios app because I have windows and as you khnow we n
 you can check the app log on bitries from the following link :
 `https://app.bitrise.io/build/285d0a5f-363a-4854-974f-9d5395977ab7`
 `https://app.bitrise.io/build/921b2f9d-37e0-4253-bd5b-e52e267d4038`
+
+link on Bitrise for Android :
+`https://app.bitrise.io/artifact/124260020/p/9bc82f053a0d92612ddf7e7502babeab`

@@ -1,11 +1,9 @@
 import {fork} from 'redux-saga/effects';
 
 import * as home from './groups/home';
-import * as profile from './groups/profile';
 
 const sagas = Object.values({
   ...home,
-  ...profile,
 });
 
 export default function* root() {

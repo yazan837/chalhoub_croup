@@ -11,6 +11,15 @@ profile page that display the user information like name , email , phone number 
 
 note : please make sure you have installed the lastest version of android studio on your device.
 
+note : this code contain three branches :
+[]: # Branch: master :contain the main code
+[]: # Branch: profile :contain the profile page
+[]: # Branch: product-branch :contain the products page
+
+you can switch between them by using command :
+[]: # Command: git checkout profile
+[]: # Command: git checkout product-branch
+
 1 clone the project by running the following command:
 
 `git clone https://github.com/yazan837/chalhoub_croup.git`

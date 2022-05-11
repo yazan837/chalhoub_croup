@@ -1,5 +1,3 @@
-import {request, requestProfile} from './api';
-
-export const getProducts = () => request('GET', '');
+import {requestProfile} from './api';
 
 export const getProfile = () => requestProfile('GET', '');

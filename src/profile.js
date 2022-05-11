@@ -11,7 +11,7 @@ const {fetchProfile} = actions;
 export default function Profile() {
   const dispatch = useDispatch();
   const data = useSelector(state => state.profile.profile);
-  const isFethingProfile = useSelector(state => state.home.isFethingProfile);
+  const isFethingProfile = useSelector(state => state.profile.isFethingProfile);
 
   useEffect(() => {
     dispatch(fetchProfile());
